@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.whoistakenffcc.com/"/>
-  <updated>2016-08-05T19:45:40.316Z</updated>
+  <updated>2016-08-05T20:51:36.886Z</updated>
   <id>http://www.whoistakenffcc.com/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【C++小技巧】How to Format and Get Yesterday Date</title>
+    <link href="http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/"/>
+    <id>http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/</id>
+    <published>2016-08-05T20:01:08.000Z</published>
+    <updated>2016-08-05T20:51:36.886Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。</p>
+<p>所以下面提供一下一种比较轻量级的date format的方法。</p>
+<hr>
+<ul>
+<li><h5 id="Format-date-to-YYYY-MM-DD-ex-2016-01-01"><a href="#Format-date-to-YYYY-MM-DD-ex-2016-01-01" class="headerlink" title="Format date to YYYY-MM-DD (ex: 2016-01-01)"></a>Format date to YYYY-MM-DD (ex: 2016-01-01)</h5></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span></div><div class="line">&#123;</div><div class="line">  <span class="keyword">time_t</span> rawtime;</div><div class="line">  <span class="keyword">struct</span> tm * timeInfo;</div><div class="line">  <span class="keyword">char</span> buffer [<span class="number">20</span>];</div><div class="line"></div><div class="line">  <span class="comment">//get the local date</span></div><div class="line">  time(&amp;rawtime);</div><div class="line">  timeInfo = localtime(&amp;rawtime);</div><div class="line"></div><div class="line">  <span class="comment">//format the date to YYYY-MM-DD (you can search strftime for more options)  </span></div><div class="line">  strftime(buffer, <span class="number">20</span>, <span class="string">"%Y-%m-%d"</span>, timeInfo);</div><div class="line"></div><div class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; buffer &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>; <span class="comment">//2016-08-05</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="How-to-get-the-DateTime-of-Yesterday"><a href="#How-to-get-the-DateTime-of-Yesterday" class="headerlink" title="How to get the DateTime of Yesterday"></a>How to get the DateTime of Yesterday</h5></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Need to add some Code</span></div><div class="line"></div><div class="line">time(&amp;rawtime);</div><div class="line"><span class="comment">//Delete total seconds of one day</span></div><div class="line">rawtime -= <span class="number">86400</span>;</div><div class="line">timeInfo = localtime(&amp;rawtime);</div></pre></td></tr></table></figure>
+<ul>
+<li><h5 id="How-to-check-if-today-is-Thursday"><a href="#How-to-check-if-today-is-Thursday" class="headerlink" title="How to check if today is Thursday?"></a>How to check if today is Thursday?</h5></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">timeInfo = localtime(&amp;rawtime);</div><div class="line"></div><div class="line"><span class="comment">//check Thursday</span></div><div class="line"><span class="keyword">if</span>(timeInfo -&gt; tm_wday == <span class="number">4</span>) <span class="comment">// search to get more options</span></div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Thursday"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</div><div class="line"><span class="keyword">else</span></div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Not Thursday"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</div></pre></td></tr></table></figure>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。&lt;/p&gt;
+&lt;p&gt;所以下面提供一下一种比较轻量级的date format的方法。&lt;/p&gt;
+&lt;hr&gt;
+
+    
+    </summary>
+    
+      <category term="Programming" scheme="http://www.whoistakenffcc.com/categories/Programming/"/>
+    
+    
+      <category term="c++" scheme="http://www.whoistakenffcc.com/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>Reading Plan 2016</title>

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="c++," />
 
 
 
@@ -86,15 +86,34 @@
 
 
 
-<meta name="description" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chen's Blog">
-<meta property="og:url" content="http://www.whoistakenffcc.com/index.html">
+<meta name="description" content="最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。
+所以下面提供一下一种比较轻量级的date format的方法。
+
+
+Format date to YYYY-MM-DD (ex: 2016-01-01)
+
+123456789101112131415161718192021">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【C++小技巧】How to Format and Get Yesterday Date">
+<meta property="og:url" content="http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/index.html">
 <meta property="og:site_name" content="Chen's Blog">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。
+所以下面提供一下一种比较轻量级的date format的方法。
+
+
+Format date to YYYY-MM-DD (ex: 2016-01-01)
+
+123456789101112131415161718192021">
+<meta property="og:updated_time" content="2016-08-05T20:51:36.886Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chen's Blog">
-<meta name="twitter:description" content="blog">
+<meta name="twitter:title" content="【C++小技巧】How to Format and Get Yesterday Date">
+<meta name="twitter:description" content="最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。
+所以下面提供一下一种比较轻量级的date format的方法。
+
+
+Format date to YYYY-MM-DD (ex: 2016-01-01)
+
+123456789101112131415161718192021">
 
 
 
@@ -115,9 +134,9 @@
 
 
 
-  <link rel="canonical" href="http://www.whoistakenffcc.com/"/>
+  <link rel="canonical" href="http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/"/>
 
-  <title> Chen's Blog </title>
+  <title> 【C++小技巧】How to Format and Get Yesterday Date | Chen's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -138,9 +157,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +254,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -259,10 +276,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/" itemprop="url">
-                  【C++小技巧】How to Format and Get Yesterday Date
-                </a>
+                【C++小技巧】How to Format and Get Yesterday Date
               
             
           </h1>
@@ -321,9 +335,7 @@
       
 
       
-        
-          
-            <p>最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。</p>
+        <p>最近工作的时候需要用c++ Format DateTime， 然后上网查了一大圈，发现c++并没有提供一个固定的format方式，boost虽然有format但是感觉有点繁琐。</p>
 <p>所以下面提供一下一种比较轻量级的date format的方法。</p>
 <hr>
 <ul>
@@ -340,160 +352,59 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">timeInfo = localtime(&amp;rawtime);</div><div class="line"></div><div class="line"><span class="comment">//check Thursday</span></div><div class="line"><span class="keyword">if</span>(timeInfo -&gt; tm_wday == <span class="number">4</span>) <span class="comment">// search to get more options</span></div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Thursday"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</div><div class="line"><span class="keyword">else</span></div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Not Thursday"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</div></pre></td></tr></table></figure>
 <hr>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/05/Reading-Plan-2016/" itemprop="url">
-                  Reading Plan 2016
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-05T14:37:04-04:00" content="2016-08-05">
-              2016-08-05
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Books/" itemprop="url" rel="index">
-                    <span itemprop="name">Books</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/c/" rel="tag">#c++</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><strong> 工作以后才发现专业书读的太少，所以每次工作起来想法太多，却大多都不专业。Nerver Too Late， 所以决定现在开始补一下相关书籍。</strong><br>由于是技术书，所以不可能像小说一样可能一周换一本，所以从今天开始到2016年结束，暂定的是计划是读完三本。</p>
-<p>这三本书刚好是自己已经买了的，或者就在公司的书柜当中。（拒绝盗版）<br><br></p>
-<h5 id="1-Clean-Code-Robert-C-Martin"><a href="#1-Clean-Code-Robert-C-Martin" class="headerlink" title="1.  Clean Code ( Robert C. Martin )"></a>1.  <a href="https://book.douban.com/subject/3032825/" target="_blank" rel="external">Clean Code</a> ( <em>Robert C. Martin</em> )</h5><p><br><br><img src="http://i.imgur.com/81Ra6KR.jpg" alt="image"></p>
-<p>这本书是目前正在翻阅的一本，由于只看了大概一章左右，所以现在写不了什么观后感和深度推荐分析一类。 只是由于之前在学校的时候，代码的原则就是能用就行，别人看不懂说明我写的代码最屌，变量命名看心情……很多的不良习惯，导致工作以后的代码比较杂乱，所以希望通过这本书让自己的代码能够变得规范。<br><br></p>
-<h5 id="2-C-Primer-5th-Stanley-B-Lippman-Josee-Lajoie-Barbara-E-Moo"><a href="#2-C-Primer-5th-Stanley-B-Lippman-Josee-Lajoie-Barbara-E-Moo" class="headerlink" title="2. C++ Primer 5th( Stanley B. Lippman / Josee Lajoie / Barbara E. Moo)"></a>2. <a href="https://book.douban.com/subject/24089577/" target="_blank" rel="external">C++ Primer 5th</a>( <em>Stanley B. Lippman / Josee Lajoie / Barbara E. Moo</em>)</h5><p><br><br><img src="http://i.imgur.com/jtvIthD.jpg" alt="image"></p>
-<p>这本厚厚的教科书其实是我最不喜欢的类型，可惜工作需要用，上学只会Java，所以要从一个不会手动回收垃圾的脏娃娃，变成干净的乖宝宝，只能啃一啃这本最经典的c++教材。<br><br></p>
-<h5 id="3-The-Pragmatic-Programmer-Andrew-Hunt-David-Thomas"><a href="#3-The-Pragmatic-Programmer-Andrew-Hunt-David-Thomas" class="headerlink" title="3. The Pragmatic Programmer( Andrew Hunt / David Thomas )"></a>3. <a href="https://book.douban.com/subject/1417047/" target="_blank" rel="external">The Pragmatic Programmer</a>( <em>Andrew Hunt / David Thomas</em> )</h5><p><br><br><img src="http://i.imgur.com/4AU63Sw.jpg" alt="image"></p>
-<p>这本所谓的程序员修炼宝典，只是因为刚好在我公司旁边的书架上，同时是老板推荐阅读首选。所以成为今年计划的第三本。<br><br></p>
-<blockquote>
-<p>人丑就要多读书，代码也一样</p>
-</blockquote>
-<p>最后，读完这些书以后，会回来补观后感的。</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/05/Reading-Plan-2016/" rel="next" title="Reading Plan 2016">
+                <i class="fa fa-chevron-left"></i> Reading Plan 2016
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -501,6 +412,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -520,8 +435,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -578,6 +502,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Format-date-to-YYYY-MM-DD-ex-2016-01-01"><span class="nav-number">1.</span> <span class="nav-text">Format date to YYYY-MM-DD (ex: 2016-01-01)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#How-to-get-the-DateTime-of-Yesterday"><span class="nav-number">2.</span> <span class="nav-text">How to get the DateTime of Yesterday</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#How-to-check-if-today-is-Thursday"><span class="nav-number">3.</span> <span class="nav-text">How to check if today is Thursday?</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -674,6 +609,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
