@@ -260,6 +260,169 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/08/c-map-vs-unordered-map/" itemprop="url">
+                  [c++] map vs unordered_map
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T22:30:18-04:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Programming/" itemprop="url" rel="index">
+                    <span itemprop="name">Programming</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Difference-between-map-and-unordered-map"><a href="#Difference-between-map-and-unordered-map" class="headerlink" title="Difference between map and unordered_map"></a>Difference between map and unordered_map</h3><h4 id="1-去官网上查implemention的解释。"><a href="#1-去官网上查implemention的解释。" class="headerlink" title="1.去官网上查implemention的解释。"></a>1.去官网上查implemention的解释。</h4><ul>
+<li>map : Maps are typically implemented as <strong>binary search</strong>.</li>
+<li>unordered_map: unordered_map implement the direct access operator which allows for <strong>direct access</strong> of the mapped value using its key value as argument. (<strong>Hashing</strong>)</li>
+</ul>
+<p>So, map will have the feathers of binary search, and unordered_map will match Hashing.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">map</th>
+<th style="text-align:left">unordered_map</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">element ordering</td>
+<td style="text-align:left">strict weak</td>
+<td style="text-align:left">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">common implementation</td>
+<td style="text-align:left">binary tree</td>
+<td style="text-align:left">hash table</td>
+</tr>
+<tr>
+<td style="text-align:left">Insertion Time</td>
+<td style="text-align:left">log(n)</td>
+<td style="text-align:left">O(1) no collisions</td>
+</tr>
+<tr>
+<td style="text-align:left">Search Time</td>
+<td style="text-align:left">log(n)</td>
+<td style="text-align:left">O(1)</td>
+</tr>
+<tr>
+<td style="text-align:left">need hash function</td>
+<td style="text-align:left">no</td>
+<td style="text-align:left">yes</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="2-什么时候该用哪一种map？"><a href="#2-什么时候该用哪一种map？" class="headerlink" title="2. 什么时候该用哪一种map？"></a>2. 什么时候该用哪一种map？</h4><p>由于两种map的原理不同，所以用法的选择大概可以参照binary tree vs hash table。</p>
+<p>我大概总结几条：</p>
+<ol>
+<li><p>unordered_map have a big array and then additional memory for each array. So if you need to be memory-aware, use map.</p>
+</li>
+<li><p>If you need pure lookup-retrieval ,use unordered_map.</p>
+</li>
+</ol>
+<p>(剩下的点，将会在将来结合工作经验进来补充)</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/" itemprop="url">
                   【C++小技巧】How to Format and Get Yesterday Date
                 </a>
@@ -532,7 +695,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
