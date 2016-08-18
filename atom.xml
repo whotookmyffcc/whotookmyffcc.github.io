@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://whotookmyffcc.github.io/"/>
-  <updated>2016-08-18T17:00:52.965Z</updated>
+  <updated>2016-08-18T17:16:53.257Z</updated>
   <id>http://whotookmyffcc.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://whotookmyffcc.github.io/2016/08/15/LeetCode-205-Isomorphic-Strings/"/>
     <id>http://whotookmyffcc.github.io/2016/08/15/LeetCode-205-Isomorphic-Strings/</id>
     <published>2016-08-16T01:31:25.000Z</published>
-    <updated>2016-08-18T17:00:52.965Z</updated>
+    <updated>2016-08-18T17:16:53.257Z</updated>
     
     <content type="html"><![CDATA[<h3 id="205-Isomorphic-Strings"><a href="#205-Isomorphic-Strings" class="headerlink" title="205. Isomorphic Strings"></a>205. Isomorphic Strings</h3><hr>
 <p>Given two strings s and t, determine if they are isomorphic.</p>
@@ -55,7 +55,7 @@
     
     </summary>
     
-      <category term="leetcode" scheme="http://whotookmyffcc.github.io/categories/leetcode/"/>
+      <category term="Leetcode" scheme="http://whotookmyffcc.github.io/categories/Leetcode/"/>
     
     
       <category term="string" scheme="http://whotookmyffcc.github.io/tags/string/"/>
