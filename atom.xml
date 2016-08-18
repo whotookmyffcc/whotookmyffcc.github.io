@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.whoistakenffcc.com/"/>
+  <link href="http://whotookmyffcc.github.io/"/>
   <updated>2016-08-16T02:33:13.229Z</updated>
-  <id>http://www.whoistakenffcc.com/</id>
+  <id>http://whotookmyffcc.github.io/</id>
   
   <author>
     <name>chen</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>[LeetCode 205] Isomorphic Strings</title>
-    <link href="http://www.whoistakenffcc.com/2016/08/15/LeetCode-205-Isomorphic-Strings/"/>
-    <id>http://www.whoistakenffcc.com/2016/08/15/LeetCode-205-Isomorphic-Strings/</id>
+    <link href="http://whotookmyffcc.github.io/2016/08/15/LeetCode-205-Isomorphic-Strings/"/>
+    <id>http://whotookmyffcc.github.io/2016/08/15/LeetCode-205-Isomorphic-Strings/</id>
     <published>2016-08-16T01:31:25.000Z</published>
     <updated>2016-08-16T02:33:13.229Z</updated>
     
@@ -55,17 +55,17 @@
     
     </summary>
     
-      <category term="LeetCode" scheme="http://www.whoistakenffcc.com/categories/LeetCode/"/>
+      <category term="LeetCode" scheme="http://whotookmyffcc.github.io/categories/LeetCode/"/>
     
     
-      <category term="string" scheme="http://www.whoistakenffcc.com/tags/string/"/>
+      <category term="string" scheme="http://whotookmyffcc.github.io/tags/string/"/>
     
   </entry>
   
   <entry>
     <title>[c++] map vs unordered_map</title>
-    <link href="http://www.whoistakenffcc.com/2016/08/08/c-map-vs-unordered-map/"/>
-    <id>http://www.whoistakenffcc.com/2016/08/08/c-map-vs-unordered-map/</id>
+    <link href="http://whotookmyffcc.github.io/2016/08/08/c-map-vs-unordered-map/"/>
+    <id>http://whotookmyffcc.github.io/2016/08/08/c-map-vs-unordered-map/</id>
     <published>2016-08-09T02:30:18.000Z</published>
     <updated>2016-08-09T02:57:51.478Z</updated>
     
@@ -131,17 +131,17 @@
     
     </summary>
     
-      <category term="Programming" scheme="http://www.whoistakenffcc.com/categories/Programming/"/>
+      <category term="Programming" scheme="http://whotookmyffcc.github.io/categories/Programming/"/>
     
     
-      <category term="c++" scheme="http://www.whoistakenffcc.com/tags/c/"/>
+      <category term="c++" scheme="http://whotookmyffcc.github.io/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>【C++小技巧】How to Format and Get Yesterday Date</title>
-    <link href="http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/"/>
-    <id>http://www.whoistakenffcc.com/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/</id>
+    <link href="http://whotookmyffcc.github.io/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/"/>
+    <id>http://whotookmyffcc.github.io/2016/08/05/C-How-to-Format-and-Get-Yesterday-Date/</id>
     <published>2016-08-05T20:01:08.000Z</published>
     <updated>2016-08-05T20:51:36.886Z</updated>
     
@@ -172,17 +172,17 @@
     
     </summary>
     
-      <category term="Programming" scheme="http://www.whoistakenffcc.com/categories/Programming/"/>
+      <category term="Programming" scheme="http://whotookmyffcc.github.io/categories/Programming/"/>
     
     
-      <category term="c++" scheme="http://www.whoistakenffcc.com/tags/c/"/>
+      <category term="c++" scheme="http://whotookmyffcc.github.io/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>Reading Plan 2016</title>
-    <link href="http://www.whoistakenffcc.com/2016/08/05/Reading-Plan-2016/"/>
-    <id>http://www.whoistakenffcc.com/2016/08/05/Reading-Plan-2016/</id>
+    <link href="http://whotookmyffcc.github.io/2016/08/05/Reading-Plan-2016/"/>
+    <id>http://whotookmyffcc.github.io/2016/08/05/Reading-Plan-2016/</id>
     <published>2016-08-05T18:37:04.000Z</published>
     <updated>2016-08-05T19:45:40.316Z</updated>
     
@@ -206,10 +206,10 @@
     
     </summary>
     
-      <category term="Books" scheme="http://www.whoistakenffcc.com/categories/Books/"/>
+      <category term="Books" scheme="http://whotookmyffcc.github.io/categories/Books/"/>
     
     
-      <category term="books" scheme="http://www.whoistakenffcc.com/tags/books/"/>
+      <category term="books" scheme="http://whotookmyffcc.github.io/tags/books/"/>
     
   </entry>
   
